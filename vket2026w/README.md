@@ -27,16 +27,27 @@ If the download fails the booth keeps the atlas baked into the submission.
 - Commit, push, wait for GitHub Pages to deploy (~1 min). Visitors who already
   loaded the booth keep the old image until they rejoin the instance.
 
-## Runway videos
+## Runway film
 
-Both files are 30-second H.264/AAC MP4s at 30 fps, recorded in Unity Play mode
-with the original avatar runtime, live Cloth and PhysBones, and the cloak's
-invisibility effect enabled throughout.
+The booth's front wall and interior screen play `ikita_runway_480x592.txt`, loaded by the booth's
+`VketStringDownloader` from
+
+    https://yanikita2.github.io/vrc_connect/vket2026w/ikita_runway_480x592.txt
+
+Format IKTV2: `IKTV2;480;592;464;30.9667;8;7;` then 9 base64 pages of raw DXT1, each a grid of 8 x 7
+frames (the last page only has the rows it needs). The booth reads the layout from the header, so a
+new film only has to stay within 9 pages and VRChat's 100 MB string limit (this one is 87.9 MB).
+The film loops on its own clock; the booth soundtrack is not synced to it.
+
+The MP4s below are the same 31-second film (H.264/AAC, 30 fps), recorded in Unity Play mode with the
+original avatar runtime, live Cloth and PhysBones, and the cloak's invisibility effect enabled
+throughout. They are reference copies; the booth does not play them.
 
 | File | Resolution | Purpose |
 | --- | --- | --- |
 | [ikita_runway_led_400x494.mp4](ikita_runway_led_400x494.mp4) | 400 x 494 | Full front LED wall, matching its 4 m x 4.94 m aspect ratio |
 | [ikita_runway_master_800x988.mp4](ikita_runway_master_800x988.mp4) | 800 x 988 | Master render |
+| [ikita_runway_stream_800x988.mp4](ikita_runway_stream_800x988.mp4) | 800 x 988 | 5 Mbps streaming copy |
 
 Direct download URLs:
 
