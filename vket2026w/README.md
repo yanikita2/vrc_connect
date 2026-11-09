@@ -17,9 +17,9 @@ If the download fails the booth keeps the atlas baked into the submission.
 | NPC Pet poster | 0, 0, 576 x 1024 | left wall, front |
 | Slime poster | 576, 0, 576 x 1024 | left wall, back |
 | Smart Weapon poster | 1152, 0, 576 x 1024 | right wall, front |
-| "NOW YOU SEE IT." strip | 1728, 0, 320 x 1024 | both sides of the back screen |
+| Vertical "IKITA" banner | 1728, 0, 320 x 1024 | two banners on the back wall, either side of the figure |
 | Shop poster | 0, 1024, 576 x 1024 | right wall, back |
-| Cloak plinth label | 576, 1024, 1472 x 256 | front of the cloak plinth |
+| Cloak placard | 576, 1024, 1472 x 256 | front of the plinth (click panel for the cloak link) |
 | (unused) | 576, 1280, 1472 x 768 | - |
 
 - The click targets (BOOTH links) are fixed in the submission; swapping the image
